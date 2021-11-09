@@ -4,6 +4,9 @@ from scipy.stats import pearsonr
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import warnings
+
+warnings.filterwarnings("error")
 
 def calculate_r2(y_observed, y_simulated):
     """
@@ -18,16 +21,18 @@ def calculate_r2(y_observed, y_simulated):
     Returns:
         float: The R squared.
     """
-    # below, if a condition is true, the array is 'nearly constant', which also includes being constant - 
-    # this deals with an edge case for the perasonr function as well as the instruction from the assignment
-    cond1 = np.linalg.norm(y_observed - np.mean(y_observed)) < 1e-13 * abs(np.mean(y_observed))
-    cond2 = np.linalg.norm(y_simulated - np.mean(y_simulated)) < 1e-13 * abs(np.mean(y_simulated))
-    if cond1 and cond2:
-        return 1.
-    elif cond1 or cond2:
-        return 0.
-    else:
+    
+    try:
         return (pearsonr(y_observed, y_simulated)[0])**2
+    except:
+        # below, if a condition is true, the array is 'nearly constant', which also includes being constant - 
+        # this deals with an edge case for the perasonr function as well as the instruction from the assignment
+        cond1 = np.linalg.norm(y_observed - np.mean(y_observed)) < 1e-13 * abs(np.mean(y_observed))
+        cond2 = np.linalg.norm(y_simulated - np.mean(y_simulated)) < 1e-13 * abs(np.mean(y_simulated))
+        if cond1 and cond2:
+            return 1.
+        elif cond1 or cond2:
+            return 0. 
 
 def calculate_nrmse(y_observed, y_simulated):
     """
