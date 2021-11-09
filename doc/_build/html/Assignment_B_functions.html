@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Function documentation &#8212; SDG Progress (SAPY) 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Function documentation" href="Assignment_B.html" />
+    <link rel="prev" title="Welcome to SDG Progress (SAPY)’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-Assignment_B_functions">
+<span id="function-documentation"></span><h1>Function documentation<a class="headerlink" href="#module-Assignment_B_functions" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.calculate_nrmse">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">calculate_nrmse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_observed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_simulated</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.calculate_nrmse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalized mean squared error (NRMSE)</p>
+<p>This function calculates the NRMSE.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_observed</strong> (<em>array_like</em>) – The observed values.</p></li>
+<li><p><strong>y_simulated</strong> (<em>array_like</em>) – The simulated values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The NRMSE.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.calculate_pbias">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">calculate_pbias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_observed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_simulated</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.calculate_pbias" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage bias (pbias)</p>
+<p>This function calculates the pbias.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_observed</strong> (<em>array_like</em>) – The observed values.</p></li>
+<li><p><strong>y_simulated</strong> (<em>array_like</em>) – The simulated values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The pbias.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.calculate_r2">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">calculate_r2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_observed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_simulated</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.calculate_r2" title="Permalink to this definition">¶</a></dt>
+<dd><p>R squared</p>
+<p>This function calculates the R squared.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_observed</strong> (<em>array_like</em>) – The observed values.</p></li>
+<li><p><strong>y_simulated</strong> (<em>array_like</em>) – The simulated values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The R squared.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.calibration">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">calibration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.calibration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calibration</p>
+<p>This function calibrates a logistic model.
+The logistic model can have a positive or negative growth.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>array_like</em>) – The explanatory variable as a sequence of numeric values         in a list or a numpy array.</p></li>
+<li><p><strong>y</strong> (<em>array_like</em>) – The response variable as a sequence of numeric values         in a list or a numpy array.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A tuple including four values: 1) the initial value (start),         2) the carrying capacity (K), 3) the x-value with the steepest growth         (x_peak), and 4) the growth rate (r).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.evaluate_model">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">evaluate_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">analysis_res</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.evaluate_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model evaluation</p>
+<p>This function evaluates models in a provided data frame using R squared,        NRMSE and pbias.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>analysis_res</strong> (<em>dataframe</em>) – Data frame containing the fitted models            (‘calibrated’ = 1) in column ‘fit’, and the independent and                dependent variable in ‘x’ and ‘y’, respectively.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Data frame with 3 new columns for evaluation.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dataframe</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.logistic">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">logistic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_peak</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.logistic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logistic model</p>
+<p>This function runs a logistic model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>array_like</em>) – The control variable as a sequence of numeric values         in a list or a numpy array.</p></li>
+<li><p><strong>start</strong> (<em>float</em>) – The initial value of the return variable.</p></li>
+<li><p><strong>K</strong> (<em>float</em>) – The carrying capacity.</p></li>
+<li><p><strong>x_peak</strong> (<em>float</em>) – The x-value with the steepest growth.</p></li>
+<li><p><strong>r</strong> (<em>float</em>) – The growth rate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A numpy array or a single floating-point number with         the return variable.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array_like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.plot_task6a">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">plot_task6a</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">country_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.plot_task6a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Country plotting as requested in task 6a</p>
+<p>This function creates an SDG progress and simulation plot for selected countries.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>country_list</strong> (<em>list</em>) – List containing the names of countries as strings to be            displayed in the plot.</p></li>
+<li><p><strong>df</strong> (<em>dataframe</em>) – Dataframe containing the coefficients of fitted models per country             in column ‘fit’ (with respect to column ‘country’) and the independent and             dependent variable in ‘x’ and ‘y’, respectively.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.plot_task6b">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">plot_task6b</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">country_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.plot_task6b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ordered dot plot as requested in task 6b</p>
+<p>This function creates an ordered dot plot to show growth rates and expected        indicator values for the top 30 populous countries in the world        (that are present in the data and have calibrated models).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>country_list</strong> (<em>list</em>) – List containing the names of countries to be displayed            in the plot. This is the list of the 30 most populous countries.</p></li>
+<li><p><strong>df</strong> (<em>dataframe</em>) – Dataframe containing the growth rate per country             in column ‘growth_rate’ and the expected indicator value in            column ‘expected_indicator’ (with respect to column ‘country’).</p></li>
+<li><p><strong>plot_title</strong> (<em>string</em><em>) </em><em>(</em><em>optional</em>) – The title of the plot under which it            should be saved.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Assignment_B_functions.validate_model">
+<span class="sig-prename descclassname"><span class="pre">Assignment_B_functions.</span></span><span class="sig-name descname"><span class="pre">validate_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">analysis_res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Assignment_B_functions.validate_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>k-fold model cross-validation</p>
+<p>This function validates fitted models in a provided dataframe using k-fold        cross-validation with R squared, NRMSE and pbias.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>analysis_res</strong> (<em>dataframe</em>) – Data frame containing the fitted models            (‘calibrated’ = 1) in column ‘fit’, and the independent and                dependent variable in ‘x’ and ‘y’, respectively.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of subsets to split the set into.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Data frame with 3 new columns for validation.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dataframe</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SDG Progress (SAPY)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Function documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment_B.html">Function documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to SDG Progress (SAPY)’s documentation!</a></li>
+      <li>Next: <a href="Assignment_B.html" title="next chapter">Function documentation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Alexandra Lecka.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Assignment_B_functions.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
